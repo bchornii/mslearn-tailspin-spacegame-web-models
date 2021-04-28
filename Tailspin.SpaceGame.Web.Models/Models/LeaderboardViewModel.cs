@@ -6,10 +6,13 @@ namespace TailSpin.SpaceGame.Web.Models
     {
         // The game mode selected in the view.
         public string SelectedMode { get; set; }
+
         // The game region (map) selected in the view.
         public string SelectedRegion { get; set; }
+
         // The current page to be shown in the view.
         public int Page { get; set; }
+        
         // The number of items to show per page in the view.
         public int PageSize { get; set; }
 
