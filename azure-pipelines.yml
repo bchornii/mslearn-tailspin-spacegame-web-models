@@ -22,15 +22,17 @@ steps:
     versionSpec: '5.x'
 
 - task: gitversion/execute@0
-  displayName: Determine Version
+  displayName: Display GitVersion config
   inputs:
+    additionalArguments: '/showConfig'
     useConfigFile: true
     configFilePath: 'GitVersion.yml'
 
 - task: gitversion/execute@0
-  displayName: Display GitVersion config
+  displayName: Determine Version
   inputs:
-    additionalArguments: '/showConfig'
+    useConfigFile: true
+    configFilePath: 'GitVersion.yml'
 
 - task: DotNetCoreCLI@2
   displayName: 'Restore project dependencies'
