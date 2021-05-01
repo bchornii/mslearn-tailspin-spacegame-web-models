@@ -24,15 +24,5 @@ namespace TailSpin.SpaceGame.Web.Models
         /// </summary>
         [JsonProperty(PropertyName = "age")]
         public int Age { get; set; }
-
-        /// <summary>
-        /// Short address
-        /// </summary>        
-        public string ShortAddress { get; set; }
-
-        /// <summary>
-        /// Long address
-        /// </summary>  
-        public string LongAddress { get; set; }
     }
 }
