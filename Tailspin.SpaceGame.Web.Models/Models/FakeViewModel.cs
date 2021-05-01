@@ -34,10 +34,5 @@ namespace TailSpin.SpaceGame.Web.Models
         /// Long address
         /// </summary>  
         public string LongAddress { get; set; }
-
-        /// <summary>
-        /// Is married flag
-        /// </summary>  
-        public bool IsMarried { get; set; }
     }
 }
