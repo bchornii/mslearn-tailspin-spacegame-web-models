@@ -14,6 +14,16 @@ branches:
     is-mainline: true
     pre-release-weight: 55000
     is-source-branch-for: ['feature', 'release', 'hotfix']
+  release:
+    tag: ''
+    increment: Patch
+    prevent-increment-of-merged-branch-version: true
+    track-merge-target: false
+    regex: ^releases?[/-]
+    tracks-release-branches: false
+    is-release-branch: true
+    is-mainline: false
+    pre-release-weight: 30000
 ignore:
   sha: []
 merge-message-formats: {}
