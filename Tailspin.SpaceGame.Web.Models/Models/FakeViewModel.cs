@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 namespace TailSpin.SpaceGame.Web.Models
 {
     /// <summary>
-    /// Base class for data models.
+    /// Base class for fake data models.
     /// </summary>
     public abstract class FakeViewModel
     {
@@ -26,8 +26,18 @@ namespace TailSpin.SpaceGame.Web.Models
         public int Age { get; set; }
 
         /// <summary>
-        /// Id
+        /// Short address
         /// </summary>        
         public string ShortAddress { get; set; }
+
+        /// <summary>
+        /// Long address
+        /// </summary>  
+        public string LongAddress { get; set; }
+
+        /// <summary>
+        /// Is married flag
+        /// </summary>  
+        public bool IsMarried { get; set; }
     }
 }
